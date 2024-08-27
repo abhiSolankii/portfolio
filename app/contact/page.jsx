@@ -47,7 +47,7 @@ const Contact = () => {
               action="https://formspree.io/f/xyzgojgj"
               method="POST"
             >
-              <h3 className="text-4xl text-accent">Let's work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Asperiores, nemo.
