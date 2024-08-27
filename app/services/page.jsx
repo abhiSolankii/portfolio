@@ -8,28 +8,28 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci.",
+      "As a proficient MERN stack developer, I craft dynamic and responsive web applications that bring ideas to life. I have a strong foundation in MongoDB, Express, React, and Node.js.",
     href: "",
   },
   {
     num: "02",
     title: "UI/UX Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci.",
+      "Specializing in UI/UX design, I craft user-friendly interfaces with tools like Shadcn UI, Material-UI, and Bootstrap. My focus is on blending aesthetics with functionality to create seamless digital experiences.",
     href: "",
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "API / Backend",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci.",
+      "As an API development expert, I build secure and efficient RESTful APIs that ensure seamless communication between front-end and back-end systems. My focus is on delivering scalable and reliable solutions that integrate smoothly across platforms.",
     href: "",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Business Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci.",
+      "As a specialist in Custom Business Website Development, I create tailored solutions for e-commerce, real estate, and other business websites. My focus is on delivering high-performance, user-friendly websites that meet the specific needs of each business.",
     href: "",
   },
 ];

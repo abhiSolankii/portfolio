@@ -15,7 +15,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione alias rem enim fugit nesciunt corrupti error?",
+    "Passionate MERN stack developer specializing in creating dynamic, user-friendly web applications with a keen eye for design and functionality.",
   info: [
     {
       fieldName: "Name",
@@ -56,7 +56,7 @@ const experience = {
   icon: "",
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione alias rem enim fugit nesciunt corrupti error?",
+    "Experienced Senior Developer with expertise in MERN stack, API development, and UI/UX design. Skilled in crafting dynamic business websites and seamless digital experiences using modern frameworks and tools. Proven leader in managing complex projects and guiding teams to success.",
   items: [
     {
       company: "Jmedia corporation",
@@ -70,7 +70,7 @@ const education = {
   icon: "",
   title: "My education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione alias rem enim fugit nesciunt corrupti error?",
+    "I completed a Full Stack Development course in 2023, gaining key web development skills. Currently pursuing a B.Tech in Computer Science at RMD Sinhgad School of Engineering, Pune, with an expected graduation in 2026",
   items: [
     {
       institution: "Digi grow hub",
@@ -93,7 +93,7 @@ const education = {
 const skills = {
   title: "My skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione alias rem enim fugit nesciunt corrupti error?",
+    "I am proficient in HTML5, CSS, and JavaScript, with strong expertise in React.js and Next.js for building dynamic web applications. Skilled in using Tailwind CSS and Bootstrap for responsive design, and experienced with Node.js for server-side development. Additionally, I utilize Figma for UI/UX design and Git for version control.",
   skillList: [
     {
       icon: <FaHtml5 />,

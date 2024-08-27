@@ -26,6 +26,9 @@ const info = [
 ];
 
 const Contact = () => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  // };
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -39,7 +42,11 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row gap-[30px]">
           {/* form  */}
           <div className="lg:w-[54%] order-2 lg:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+              action="https://formspree.io/f/xyzgojgj"
+              method="POST"
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -47,22 +54,48 @@ const Contact = () => {
               </p>
               {/* input  */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input
+                  type="firstname"
+                  placeholder="Firstname"
+                  required
+                  name="firstname"
+                />
+                <Input
+                  type="lastname"
+                  placeholder="Lastname"
+                  required
+                  name="lastname"
+                />
+                <Input
+                  type="email"
+                  placeholder="Email address"
+                  email="true"
+                  required
+                  name="email"
+                />
+                <Input
+                  type="phone"
+                  placeholder="Phone number"
+                  number="true"
+                  required
+                  name="phone"
+                />
               </div>
               {/* select  */}
-              <Select>
+              <Select name="service">
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="web">Web development</SelectItem>
+                    <SelectItem value="ui">UI/UX Design</SelectItem>
+                    <SelectItem value="api">API / Backend</SelectItem>
+                    <SelectItem value="business">Business Website</SelectItem>
+                    <SelectItem value="other">
+                      Other- Specify in message
+                    </SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -71,10 +104,12 @@ const Contact = () => {
               <Textarea
                 className="h-[200px] "
                 placeholder="Type your message here."
+                required
+                name="message"
               />
 
               {/* btn  */}
-              <Button size="md" className="max-w-40 rounded-2xl">
+              <Button size="md" className="max-w-40 rounded-2xl" type="submit">
                 Send message
               </Button>
             </form>

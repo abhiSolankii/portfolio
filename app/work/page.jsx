@@ -3,7 +3,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowDownRight, BsGithub } from "react-icons/bs";
 import {
   Tooltip,
   TooltipProvider,
@@ -17,36 +17,63 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
-    title: "Project 1",
+    category: "Fullstack",
+    title: "Chat App",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis?",
-    stack: [{ name: "Html 5" }, { name: "Css" }, { name: "Javascript" }],
-    image: "/assets/Photo.png",
-    live: "",
-    github: "",
+      "A real-time chat application built with React.js, Tailwind CSS, and Socket.io, featuring dynamic messaging and seamless user interaction.",
+    stack: [
+      { name: "React js" },
+      { name: "Tailwind" },
+      { name: "Socket io" },
+      { name: "express js" },
+    ],
+    image: "/assets/projects/chat-app.png",
+    live: "https://chat-app-q12r.onrender.com",
+    github: "https://github.com/abhiSolankii/chat-app",
   },
   {
     num: "02",
-    category: "fullstack",
-    title: "Project 2",
+    category: "Frontend",
+    title: "News Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis?",
-    stack: [{ name: "next js" }, { name: "tailwind" }, { name: "node js" }],
-    image: "/assets/Photo.png",
-    live: "",
+      "A responsive news website built with React.js and Tailwind CSS, featuring dynamic content fetched from an API for up-to-date news coverage.",
+    stack: [{ name: "React js" }, { name: "tailwind" }, { name: "API" }],
+    image: "/assets/projects/news-website.png",
+    live: "https://ocean-news-react.netlify.app",
+    github: "https://github.com/abhiSolankii/News-website-react",
+  },
+
+  {
+    num: "03",
+    category: "Fullstack",
+    title: "Music website",
+    description:
+      "A full-stack music website developed with Next.js and Node.js, featuring a sleek design with Tailwind CSS and integrated APIs for dynamic music content and playback.",
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "APIs" },
+      { name: "Node js" },
+    ],
+    image: "/assets/projects/music-website.png",
+    live: "https://phoenixlabs-noirsoul.netlify.app",
     github: "",
   },
   {
-    num: "03",
-    category: "frontend",
-    title: "Project 3",
+    num: "04",
+    category: "Fullstack",
+    title: "Real estate website",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis?",
-    stack: [{ name: "React js" }, { name: "Css" }, { name: "Javascript" }],
-    image: "/assets/Photo.png",
-    live: "",
-    github: "",
+      "A full-stack real estate website built with React.js and Node.js, featuring property listings on an interactive map, options to buy or sell properties, and integrated chat functionality for client communication.",
+    stack: [
+      { name: "React js" },
+      { name: "tailwind" },
+      { name: "Cloud" },
+      { name: "Node js" },
+    ],
+    image: "/assets/projects/real-estate-website.png",
+    live: "https://www.shutterstock.com/image-vector/coming-soon-on-dark-background-600nw-2364512887.jpg",
+    github: "https://github.com/abhiSolankii/homeheaven-realestate",
   },
 ];
 
@@ -79,6 +106,9 @@ const Work = () => {
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
+              <h2 className="text-[32px] font-semibold leading-none text-white/80 group-hover:text-accent transition-all duration-500 capitalize">
+                {project.title}
+              </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
@@ -94,11 +124,11 @@ const Work = () => {
               {/* buttons  */}
               <div className="flex items-center gap-4">
                 {/* live project button  */}
-                <Link href={project.live}>
+                <Link href={project.live} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                        <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group transition-all duration-500 hover:-rotate-45">
+                        <BsArrowDownRight className="text-white text-3xl group-hover:text-accent" />
                       </TooltipTrigger>
                       <TooltipContent>
                         <p>Live project</p>
@@ -107,7 +137,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link>
                 {/* github project button  */}
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
