@@ -38,7 +38,7 @@ const Contact = () => {
       }}
       className="py-6"
     >
-      <div className="container mx-auto h-full min-h-screen">
+      <div className="container mx-auto h-full min-h-[80vh]">
         <div className="flex flex-col lg:flex-row gap-[30px]">
           {/* form  */}
           <div className="lg:w-[54%] order-2 lg:order-none">
