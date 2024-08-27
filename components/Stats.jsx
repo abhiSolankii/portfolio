@@ -10,7 +10,7 @@ const Stats = () => {
   return (
     <section>
       <div className="container mx-auto">
-        <div className="flex w-full justify-between">
+        <div className="flex flex-col gap-6 items-center text-center mt-6 lg:mt-0 lg:flex-row  w-full lg:justify-between">
           {stats.map((item, index) => {
             return (
               <div key={index}>
