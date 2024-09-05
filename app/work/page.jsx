@@ -56,7 +56,7 @@ const projects = [
       { name: "Node js" },
     ],
     image: "/assets/projects/music-website.png",
-    live: "https://phoenixlabs-noirsoul.netlify.app",
+    live: "",
     github: "",
   },
   {
