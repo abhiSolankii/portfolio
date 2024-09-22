@@ -80,9 +80,8 @@ const projects = [
       { name: "Node js" },
     ],
     image: "/assets/projects/music-website.png",
-    live: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Tz1QH8unQR6aeLD99NnnJXS-fqeL0s7yrg&s",
-    github:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Tz1QH8unQR6aeLD99NnnJXS-fqeL0s7yrg&s",
+    live: "",
+    github: "",
   },
   {
     num: "05",
