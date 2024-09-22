@@ -21,6 +21,7 @@ const projects = [
     title: "Chat App",
     description:
       "A real-time chat application built with React.js, Tailwind CSS, and Socket.io, featuring dynamic messaging and seamless user interaction.",
+    tags: [{ name: "Personal" }],
     stack: [
       { name: "React js" },
       { name: "Tailwind" },
@@ -33,38 +34,28 @@ const projects = [
   },
   {
     num: "02",
-    category: "Frontend",
-    title: "News Website",
+    category: "Fullstack",
+    title: "HealthSync - Health tracking website",
     description:
-      "A responsive news website built with React.js and Tailwind CSS, featuring dynamic content fetched from an API for up-to-date news coverage.",
-    stack: [{ name: "React js" }, { name: "tailwind" }, { name: "API" }],
-    image: "/assets/projects/news-website.png",
-    live: "https://ocean-news-react.netlify.app",
-    github: "https://github.com/abhiSolankii/News-website-react",
+      "A comprehensive health tracking platform. HealthSync allows users to create and manage personal health records, track vital signs, and monitor overall well-being.",
+    tags: [{ name: "Personal" }],
+    stack: [
+      { name: "React js" },
+      { name: "Tailwind" },
+      { name: "Socket io" },
+      { name: "express js" },
+    ],
+    image: "/assets/projects/HealthSync.png",
+    live: "https://healthsync-bx9o.onrender.com",
+    github: "https://github.com/abhiSolankii/chat-app",
   },
-
   {
     num: "03",
     category: "Fullstack",
-    title: "Music website",
-    description:
-      "A full-stack music website developed with Next.js and Node.js, featuring a sleek design with Tailwind CSS and integrated APIs for dynamic music content and playback.",
-    stack: [
-      { name: "Next js" },
-      { name: "Tailwind" },
-      { name: "APIs" },
-      { name: "Node js" },
-    ],
-    image: "/assets/projects/music-website.png",
-    live: "https://phoenixlabs-noirsoul.netlify.app",
-    github: "",
-  },
-  {
-    num: "04",
-    category: "Fullstack",
-    title: "Real estate website",
+    title: "HomeHeaven -Real estate website",
     description:
       "A full-stack real estate website built with React.js and Node.js, featuring property listings on an interactive map, options to buy or sell properties, and integrated chat functionality for client communication.",
+    tags: [{ name: "Personal" }],
     stack: [
       { name: "React js" },
       { name: "tailwind" },
@@ -72,8 +63,38 @@ const projects = [
       { name: "Node js" },
     ],
     image: "/assets/projects/real-estate-website.png",
-    live: "https://www.shutterstock.com/image-vector/coming-soon-on-dark-background-600nw-2364512887.jpg",
-    github: "https://github.com/abhiSolankii/homeheaven-realestate",
+    live: "https://homeheaven-b2jf.onrender.com",
+    github: "https://github.com/abhiSolankii/HomeHeaven",
+  },
+  {
+    num: "04",
+    category: "Fullstack",
+    title: "Music website",
+    description:
+      "A full-stack music website developed with Next.js and Node.js, featuring a sleek design with Tailwind CSS and integrated APIs for dynamic music content and playback.",
+    tags: [{ name: "Company" }],
+    stack: [
+      { name: "Next js" },
+      { name: "Tailwind" },
+      { name: "APIs" },
+      { name: "Node js" },
+    ],
+    image: "/assets/projects/music-website.png",
+    live: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Tz1QH8unQR6aeLD99NnnJXS-fqeL0s7yrg&s",
+    github:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_Tz1QH8unQR6aeLD99NnnJXS-fqeL0s7yrg&s",
+  },
+  {
+    num: "05",
+    category: "OceanNews -Frontend news website",
+    title: "News Website",
+    description:
+      "A responsive news website built with React.js and Tailwind CSS, featuring dynamic content fetched from an API for up-to-date news coverage.",
+    tags: [{ name: "Personal" }],
+    stack: [{ name: "React js" }, { name: "tailwind" }, { name: "API" }],
+    image: "/assets/projects/news-website.png",
+    live: "https://ocean-news-react.netlify.app",
+    github: "https://github.com/abhiSolankii/News-website-react",
   },
 ];
 
@@ -110,6 +131,16 @@ const Work = () => {
                 {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
+              <ul className="flex gap-2">
+                {project.tags.map((item, index) => {
+                  return (
+                    <li key={index} className="text-white text-md capitalize">
+                      {item.name}
+                      {index !== project.tags.length - 1 && ","}
+                    </li>
+                  );
+                })}
+              </ul>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
