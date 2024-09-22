@@ -49,7 +49,7 @@ const Contact = () => {
             >
               <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                I'm excited to collaborate on new projects. Reach out, and let's
+                I am excited to collaborate on new projects. Reach out, and lets
                 make something amazing!
               </p>
               {/* input  */}

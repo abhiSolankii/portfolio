@@ -24,7 +24,7 @@ const Home = () => {
             <div className="flex flex-col lg:flex-row items-center gap-8">
               <Button variant="outline" size="lg" className="">
                 <a
-                  href="https://drive.google.com/u/0/uc?id=1t8dnE7pZH2Ft0JbMIcqppCXpjgxuSY-N&export=download"
+                  href="https://drive.google.com/uc?export=download&id=1t8dnE7pZH2Ft0JbMIcqppCXpjgxuSY-N"
                   className="uppercase flex items-center gap-2"
                 >
                   <span>Download CV</span>
