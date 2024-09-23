@@ -194,7 +194,8 @@ const experience = {
         ],
         achievements: ["Details coming soon"],
         links: {
-          offerLetter: "",
+          offerLetter:
+            "https://drive.google.com/file/d/1j40JdbEXuNBKHPy1gwD-DBQRcxddKKTv/view?usp=sharing",
 
           completionLetter: "",
         },
